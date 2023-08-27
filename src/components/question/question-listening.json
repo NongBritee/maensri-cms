@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_question_question_listenings",
+  "info": {
+    "displayName": "Question - Listening",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "maxLength": 1000,
+      "required": true
+    },
+    "pic": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "answer": {
+      "type": "integer",
+      "max": 4,
+      "min": 1,
+      "required": true,
+      "default": 1
+    },
+    "order": {
+      "type": "integer",
+      "default": 999,
+      "required": true
+    },
+    "choices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "choice.choice",
+      "max": 4,
+      "min": 4,
+      "required": true
+    }
+  }
+}

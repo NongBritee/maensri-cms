@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exams",
+  "info": {
+    "singularName": "exam",
+    "pluralName": "exams",
+    "displayName": "exam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "teacher_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "exam_time": {
+      "type": "integer",
+      "default": 30,
+      "max": 60,
+      "required": true,
+      "min": 5
+    },
+    "exam_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "required": true,
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 999,
+      "min": 1
+    },
+    "questions": {
+      "type": "dynamiczone",
+      "components": [
+        "question.question-listening",
+        "question.question-reading"
+      ],
+      "required": true,
+      "min": 1
+    }
+  }
+}

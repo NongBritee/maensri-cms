@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_question_question_readings",
+  "info": {
+    "displayName": "Question - Reading",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "required": true,
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "text": {
+      "type": "string",
+      "required": true,
+      "maxLength": 1000
+    },
+    "pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "answer": {
+      "type": "integer",
+      "max": 4,
+      "min": 1,
+      "required": true,
+      "default": 1,
+      "private": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 999,
+      "required": true
+    },
+    "choices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "choice.choice"
+    }
+  }
+}
