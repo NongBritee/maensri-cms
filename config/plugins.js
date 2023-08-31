@@ -19,7 +19,7 @@ module.exports = ({ env }) => ({
          * This option is required to upload files larger than 5MB, and is highly recommended to be set.
          * Check the cloudflare docs for the setup: https://developers.cloudflare.com/r2/data-access/public-buckets/#enable-public-access-for-your-bucket
          */
-        cloudflarePublicAccessUrl: "https://pub-e5aac3e5e25d4e2388fed3401de461ed.r2.dev",
+        cloudflarePublicAccessUrl: "https://cms-object.maensrischool.ac.th",
       },
       actionOptions: {
         upload: {},
