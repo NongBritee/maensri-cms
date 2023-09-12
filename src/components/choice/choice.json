@@ -1,7 +1,8 @@
 {
   "collectionName": "components_choice_choices",
   "info": {
-    "displayName": "Choice"
+    "displayName": "Choice",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,17 +12,12 @@
       "maxLength": 1000
     },
     "pic": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
-    },
-    "choice_id": {
-      "type": "customField",
-      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
-      "customField": "plugin::field-uuid.uuid"
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

@@ -10,7 +10,7 @@
     "question_id": {
       "type": "customField",
       "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
-      "required": true,
+      "required": false,
       "customField": "plugin::field-uuid.uuid"
     },
     "title": {
@@ -19,8 +19,8 @@
       "maxLength": 200
     },
     "text": {
-      "type": "string",
-      "required": true,
+      "type": "text",
+      "required": false,
       "maxLength": 1000
     },
     "pic": {
@@ -39,15 +39,13 @@
       "default": 1,
       "private": true
     },
-    "order": {
-      "type": "integer",
-      "default": 999,
-      "required": true
-    },
     "choices": {
       "type": "component",
       "repeatable": true,
-      "component": "choice.choice"
+      "component": "choice.choice",
+      "max": 4,
+      "min": 4,
+      "required": true
     }
   }
 }
