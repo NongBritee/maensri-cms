@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "question_id": {
-      "type": "customField",
-      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
-      "required": false,
-      "customField": "plugin::field-uuid.uuid"
-    },
     "title": {
       "type": "string",
       "required": true,
