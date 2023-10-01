@@ -30,8 +30,7 @@
       "max": 4,
       "min": 1,
       "required": true,
-      "default": 1,
-      "private": true
+      "default": 1
     },
     "choices": {
       "type": "component",
