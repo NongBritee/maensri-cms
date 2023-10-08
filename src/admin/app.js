@@ -1,4 +1,10 @@
+import favicon from './extensions/maensri-icon.png'
+
 const config = {
+  head: {
+    favicon: favicon,
+  },
+
   locales: [
     // 'ar',
     // 'fr',
@@ -20,7 +26,7 @@ const config = {
     // 'ru',
     // 'sk',
     // 'sv',
-    // 'th',
+    'th',
     // 'tr',
     // 'uk',
     // 'vi',
