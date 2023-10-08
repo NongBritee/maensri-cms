@@ -28,7 +28,7 @@ module.exports = ({ env }) => {
       pool: { 
         min: env.int('DATABASE_POOL_MIN', 2), 
         max: env.int('DATABASE_POOL_MAX', 10),
-        idleTimeoutMillis: env.int('DATABASE_POOL_IDLE_TIMEOUT', 0),
+        idleTimeoutMillis: env.int('DATABASE_POOL_IDLE_TIMEOUT', Number.MAX_SAFE_INTEGER),
       },
     },
   };
