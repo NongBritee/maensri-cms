@@ -39,6 +39,6 @@
       "max": 4,
       "min": 4,
       "required": true
-    }
+        }
   }
 }

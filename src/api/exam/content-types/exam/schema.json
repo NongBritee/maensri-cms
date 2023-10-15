@@ -41,11 +41,9 @@
       "min": 1
     },
     "questions": {
-      "type": "dynamiczone",
-      "components": [
-        "question.question-listening",
-        "question.question-reading"
-      ],
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question-listening",
       "required": true,
       "min": 1
     }

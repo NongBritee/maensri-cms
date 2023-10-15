@@ -1,7 +1,7 @@
 {
   "collectionName": "components_question_question_listenings",
   "info": {
-    "displayName": "Question - Listening",
+    "displayName": "Question",
     "description": ""
   },
   "options": {},
@@ -27,7 +27,7 @@
     "audio": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "audios"
       ]
